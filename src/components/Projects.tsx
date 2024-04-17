@@ -12,7 +12,7 @@ function Projects() {
         <div className="grid grid-cols-1 gap-5 lg:gap-8 md:grid-cols-2 lg:grid-cols-3 mt-8">
           <div className="rounded-lg shadow-xl bg-slate-500">
             <div>
-              <img src="./src/assets/calorie-tracker.webp" className="rounded-t-md" alt="calorie-tracker" />
+              <img src="./calorie-tracker.webp" className="rounded-t-md" alt="calorie-tracker" />
             </div>
             <div className="p-4 space-y-4">
               <div className="flex items-center justify-between">
@@ -33,7 +33,7 @@ function Projects() {
 
           <div className="rounded-lg shadow-xl bg-slate-500">
             <div>
-              <img src="./src/assets/calorie-tracker.webp" className="rounded-t-md" alt="calorie-tracker" />
+              <img src="./calorie-tracker.webp" className="rounded-t-md" alt="calorie-tracker" />
             </div>
             <div className="p-4 space-y-4">
               <div className="flex items-center justify-between">
@@ -54,7 +54,7 @@ function Projects() {
         
           <div className="rounded-lg shadow-xl bg-slate-500">
             <div>
-              <img src="./src/assets/calorie-tracker.webp" className="rounded-t-md" alt="calorie-tracker" />
+              <img src="./calorie-tracker.webp" className="rounded-t-md" alt="calorie-tracker" />
             </div>
             <div className="p-4 space-y-4">
               <div className="flex items-center justify-between">
