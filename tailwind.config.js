@@ -8,9 +8,27 @@ export default {
     extend: {
       backgroundColor: theme => ({
         ...theme('colors'),
+        // 'primary': "#1E293B",
+        // 'secondary': "#94A3B8",
+
         'primary': "#1E293B",
-        'secondary': "#94A3B8"
+        'secondary': "#93A1B8",
+        'brown': "#635943",
+        'text': "#E3C78F",
+        'light': "#A39D90",
+        'blue': "#76ABFF"
+        
       }),
+      textColor: {
+        'primary': '#E3C78F',
+        'dark': "#1E293B",
+        'blue': "#76ABFF"
+      },
+      borderColor: {
+        'primary': '#E3C78F',
+        'blue': "#76ABFF",
+        'dark': "#1E293B",
+      },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       }
