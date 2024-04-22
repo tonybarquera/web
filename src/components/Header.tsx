@@ -17,9 +17,9 @@ function Header() {
         { <FaBars className='md:hidden' color='white' size='28px' onClick={handleMenu} /> }
         
         <nav className={`flex flex-col md:flex-row gap-5 md:gap-10  ${ !activeMenu ? 'hidden' : ''} md:flex items-center transition-all`}>
-          <NavLink text="About Me" setActiveMenu={setActiveMenu} />
-          <NavLink text="Projects" setActiveMenu={setActiveMenu} />
-          <NavLink text="Contact" setActiveMenu={setActiveMenu} />
+          <NavLink text="About Me" reference='about' setActiveMenu={setActiveMenu} />
+          <NavLink text="Projects" reference='projects' setActiveMenu={setActiveMenu} />
+          <NavLink text="Contact" reference='contact' setActiveMenu={setActiveMenu} />
         </nav>
       </div>
     </header>

@@ -22,6 +22,7 @@ export default {
       textColor: {
         'primary': '#E3C78F',
         'dark': "#1E293B",
+        'light': "#A39D90",
         'blue': "#76ABFF"
       },
       borderColor: {

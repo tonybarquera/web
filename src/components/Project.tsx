@@ -3,53 +3,42 @@ import { DiChrome } from "react-icons/di";
 
 type ProjectProps = {
   name: string;
-  frontIcons?: string[];
-  backIcons?: string[];
+  project: 'FrontEnd' | 'BackEnd' | 'FullStack';
+  tools: string[];
   webUrl: string;
   githubUrl: string;
   image: string;
 }
 
-function Project({ name, frontIcons, backIcons, webUrl, githubUrl, image } : ProjectProps ) {
-  const existsFront = frontIcons;
-  const existsBack = backIcons;
-
+function Project({ name, project, tools, webUrl, githubUrl, image } : ProjectProps ) {
   return (
     <div className="rounded-lg shadow-xl bg-primary">
-      <div>
+      <div className="border-b border-primary border-opacity-30">
         <img src={image} className="rounded-t-md" alt="calorie-tracker" />
       </div>
       <div className="p-4 space-y-4">
         <div className="flex items-center justify-between">
-          <p className="font-roboto text-lg font-bold uppercase text-blue">{name}</p>
+          <p className="font-roboto text-lg font-bold uppercase text-primary">{name}</p>
           <div className="flex gap-2">
-            <a href={webUrl} target="_blank" className="hover:scale-125 transition-transform"><DiChrome color="white" size='35px' /></a>
-            <a href={githubUrl} target="_blank" className="hover:scale-125 transition-transform"><DiGithubBadge color="white" size='35px' /></a>
+            <a href={webUrl} target="_blank" className="hover:scale-125 transition-transform">
+              <DiChrome color="#A39D90" size='35px' />
+              </a>
+            <a href={githubUrl} target="_blank" className="hover:scale-125 transition-transform">
+              <DiGithubBadge color="#A39D90" size='35px' />
+            </a>
           </div>
         </div>
 
-        { existsFront && 
+        { tools && 
           <>
-            <p className="font-roboto text-sm font-bold uppercase text-blue">FrontEnd</p>
+            <p className="font-roboto text-sm font-bold uppercase text-primary">{project}</p>
             <div className="flex flex-wrap gap-2">
-              { frontIcons!.map(icon => (
-                <img src={`https://img.shields.io/badge/${icon}-0?style=flat&logo=${icon}&color=%23000`} alt="React" />
+              { tools!.map(tool => (
+                <img src={`https://img.shields.io/badge/${tool}-0?style=flat&logo=${tool}&color=%23000`} alt={`${tool} icon`} />
               )) }
             </div>
           </>
         }
-
-        { existsBack && 
-          <>
-            <p className="font-roboto text-sm font-bold text-black uppercase">BackEnd</p>
-            <div className="flex flex-wrap gap-2">
-              { backIcons!.map(icon => (
-                <img src={`https://img.shields.io/badge/${icon}-0?style=flat&logo=${icon}&color=%23000`} alt="React" />
-              )) }
-            </div>
-          </>
-        }
-        
       </div>
     </div>
   )
