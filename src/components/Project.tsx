@@ -5,7 +5,7 @@ type ProjectProps = {
   name: string;
   project: 'FrontEnd' | 'BackEnd' | 'FullStack';
   tools: string[];
-  webUrl: string;
+  webUrl?: string;
   githubUrl: string;
   image: string;
 }
@@ -20,9 +20,11 @@ function Project({ name, project, tools, webUrl, githubUrl, image } : ProjectPro
         <div className="flex items-center justify-between">
           <p className="font-roboto text-lg font-bold uppercase text-primary">{name}</p>
           <div className="flex gap-2">
-            <a href={webUrl} target="_blank" className="hover:scale-125 transition-transform">
-              <DiChrome color="#A39D90" size='35px' />
+            { webUrl && 
+              <a href={webUrl} target="_blank" className="hover:scale-125 transition-transform">
+                <DiChrome color="#A39D90" size='35px' />
               </a>
+            }
             <a href={githubUrl} target="_blank" className="hover:scale-125 transition-transform">
               <DiGithubBadge color="#A39D90" size='35px' />
             </a>

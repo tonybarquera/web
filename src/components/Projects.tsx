@@ -10,6 +10,14 @@ function Projects() {
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-8">
           <Project 
+            name="API HomeBytes"
+            project="BackEnd"
+            tools={["Node.js", "Express", "Passport", "Swagger", "Jest"]}
+            githubUrl="https://github.com/tonybarquera/api-sts-taller"
+            image="./homebytes.webp"
+          />
+
+          <Project 
             name="Pacientes de Veterinaria"
             project="FrontEnd"
             tools={["React", "TypeScript", "TailwindCSS"]}
