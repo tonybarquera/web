@@ -1,16 +1,9 @@
 import { DiGithubBadge } from "react-icons/di";
 import { DiChrome } from "react-icons/di";
 
-type ProjectProps = {
-  name: string;
-  project: 'FrontEnd' | 'BackEnd' | 'FullStack';
-  tools: string[];
-  webUrl?: string;
-  githubUrl: string;
-  image: string;
-}
+import type { Project } from '../../types';
 
-function Project({ name, project, tools, webUrl, githubUrl, image } : ProjectProps ) {
+function Project({ name, project, tools, webUrl, githubUrl, image } : Project ) {
   return (
     <div className="rounded-lg shadow-xl bg-primary">
       <div className="border-b border-primary border-opacity-30">
