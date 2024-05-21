@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.typed-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #E3C78F;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.typed-cursor {
+  font-size: 24px;
+  color: #E3C78F;
+  font-family: "Ubuntu", sans-serif;
+}  
+
+@media (min-width: 768px) {
+  .typed-cursor {
+    font-size: 48px;  
+  } 
+
+  .typed-text {
+    font-size: 48px;
+  }
+}
