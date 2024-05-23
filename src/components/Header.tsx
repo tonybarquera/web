@@ -16,7 +16,7 @@ function Header() {
       
         { <FaBars className='md:hidden' color='white' size='28px' onClick={handleMenu} /> }
         
-        <nav className={`flex flex-col md:flex-row gap-5 md:gap-10  ${ !activeMenu ? 'hidden' : ''} md:flex items-center transition-all`}>
+        <nav className={`flex flex-col md:flex-row gap-5 md:gap-10  ${ !activeMenu ? 'hidden' : ''} md:flex items-center transition ease-in-out delay-500`}>
           <NavLink text="About Me" reference='about' setActiveMenu={setActiveMenu} />
           <NavLink text="Projects" reference='projects' setActiveMenu={setActiveMenu} />
           <NavLink text="Contact" reference='contact' setActiveMenu={setActiveMenu} />

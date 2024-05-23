@@ -34,7 +34,7 @@ export default {
         roboto: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        'hero': "url('./fondo.webp')",
+        'hero': "url('/fondo.webp')",
       }
     },
   },
