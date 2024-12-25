@@ -8,7 +8,7 @@ type NavLinkProps = {
 
 function NavLink({ text, reference, setActiveMenu } : NavLinkProps) {
   return (
-    <a href={`#${reference}`} className="font-roboto text-center text-sm text-primary px-5 py-1 border-b-2 border-slate-700 hover:border-b-2 hover:border-primary" onClick={() => setActiveMenu(false)} >{text}</a>
+    <a href={`#${reference}`} className="font-roboto text-center text-sm text-primary px-5 py-1 md:border-b-2 md:border-slate-700 md:hover:border-b-2 md:hover:border-primary" onClick={() => setActiveMenu(false)} >{text}</a>
   )
 }
 
