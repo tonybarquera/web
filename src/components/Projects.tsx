@@ -3,7 +3,7 @@ import projects from '../../db/projects';
 
 function Projects() {
   return (
-    <section className="my-16" id="projects">
+    <section className="py-16" id="projects">
       <div className=""> 
         <div className="flex justify-center">
           <p className="font-roboto text-dark uppercase text-2xl font-bold border-b-2 border-slate-700 pb-2 px-10">My Projects</p>

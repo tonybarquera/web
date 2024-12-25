@@ -9,7 +9,7 @@ function AboutMe() {
       strings: [
         'Hola, Soy Tony Barquera',
         'Ingeniero en Sistemas Computacionales',
-        'Desarrollador Backend'
+        'Desarrollador FullStack'
       ],
       typeSpeed: 100,
       loop: true,
@@ -28,7 +28,7 @@ function AboutMe() {
             <div className="mx-auto">
               <img src="./tony_photo.png" alt="tony photo"/>
             </div>
-            <div>
+            <div className='h-16'>
               <span className='typed-text' ref={element} />
             </div>
           </div>
