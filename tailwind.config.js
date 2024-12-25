@@ -8,9 +8,6 @@ export default {
     extend: {
       backgroundColor: theme => ({
         ...theme('colors'),
-        // 'primary': "#1E293B",
-        // 'secondary': "#94A3B8",
-
         'primary': "#1E293B",
         'secondary': "#93A1B8",
         'brown': "#635943",
@@ -35,7 +32,10 @@ export default {
       },
       backgroundImage: {
         'hero': "url('/fondo.webp')",
-      }
+      },
+      colors: {
+        secondary: "#93A1B8",
+      },
     },
   },
   plugins: [],

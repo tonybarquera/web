@@ -5,11 +5,11 @@ import type { Project } from '../../types';
 
 function Project({ name, project, tools, webUrl, githubUrl, image } : Project ) {
   return (
-    <div className="rounded-lg shadow-xl bg-primary">
-      <div className="border-b border-primary border-opacity-30">
-        <img src={image} className="rounded-t-md" alt="calorie-tracker" />
+    <div className="rounded-lg shadow-xl bg-primary w-72 md:w-96">
+      <div className="border-b border-primary border-opacity-30 h-56 md:h-64">
+        <img src={image} className="rounded-t-md h-56 md:h-64 w-full" alt="calorie-tracker" />
       </div>
-      <div className="p-4 space-y-4">
+      <div className="p-4 space-y-4 h-44 md:h-56">
         <div className="flex items-center justify-between">
           <p className="font-roboto text-lg font-bold uppercase text-primary">{name}</p>
           <div className="flex gap-2">
