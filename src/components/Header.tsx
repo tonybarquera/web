@@ -20,6 +20,7 @@ function Header() {
         
         <nav className={`flex flex-col mt-3 md:mt-0 md:flex-row gap-5 md:gap-10  ${ !activeMenu ? 'hidden' : ''} md:flex items-center transition ease-in-out delay-500`}>
           <NavLink text="About Me" reference='about' setActiveMenu={setActiveMenu} />
+          <NavLink text="Skills" reference='skills' setActiveMenu={setActiveMenu} />
           <NavLink text="Projects" reference='projects' setActiveMenu={setActiveMenu} />
           <NavLink text="Contact" reference='contact' setActiveMenu={setActiveMenu} />
         </nav>
